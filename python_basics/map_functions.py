@@ -28,3 +28,4 @@ people = [
     {'name': "Ansh", "age": 20}
 ]
 print(list(map(get_name,people)))
+
