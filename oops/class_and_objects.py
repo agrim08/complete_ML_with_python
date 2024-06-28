@@ -11,10 +11,7 @@ print(per.name)
 print(per.age)
 
 #adding attributes:
-setattr(per,'isLoggedIn', False)
-setattr(per,'hobby', 'cricket')
-# per.hobby = "cricket"
-# per.isLoggedIn = False
+per.hobby = "cricket"
+per.isLoggedIn = False
+print(per.isLoggedIn) #these attributes are specific to per object only
 
-print(getattr(per , 'isLoggedIn'))
-print(getattr(per , 'hobby'))
