@@ -1,0 +1,11 @@
+Date,Product,Category,Quantity,Price,Total
+2024-08-01,Widget A,Electronics,10,25.00,250.00
+2024-08-01,Widget B,Home Goods,5,15.00,75.00
+2024-08-02,Widget C,Electronics,7,30.00,210.00
+2024-08-02,Widget D,Home Goods,3,20.00,60.00
+2024-08-03,Widget E,Electronics,12,22.50,270.00
+2024-08-03,Widget F,Home Goods,8,18.75,150.00
+2024-08-04,Widget G,Electronics,6,27.50,165.00
+2024-08-04,Widget H,Home Goods,4,19.00,76.00
+2024-08-05,Widget I,Electronics,9,24.00,216.00
+2024-08-05,Widget J,Home Goods,2,17.50,35.00
