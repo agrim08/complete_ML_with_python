@@ -1,0 +1,9 @@
+2024-08-25 23:17:50: - ArthematicApp - DEBUG - Adding 1 and 2 = 3
+2024-08-25 23:17:50: - ArthematicApp - DEBUG - Subtracting 19 and 8 = 11
+2024-08-25 23:17:50: - ArthematicApp - DEBUG - Multiplying 5 and 4 = 20
+2024-08-25 23:17:50: - ArthematicApp - DEBUG - Dividing 10 and 5 = 2.0
+2024-08-25 23:21:45: - ArthematicApp - DEBUG - Adding 1 and 2 = 3
+2024-08-25 23:21:45: - ArthematicApp - DEBUG - Subtracting 19 and 8 = 11
+2024-08-25 23:21:45: - ArthematicApp - DEBUG - Multiplying 5 and 4 = 20
+2024-08-25 23:21:45: - ArthematicApp - DEBUG - Dividing 10 and 5 = 2.0
+2024-08-25 23:21:45: - ArthematicApp - ERROR - Zero division error
