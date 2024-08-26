@@ -1,0 +1,15 @@
+2024-08-26 11:18:40,399 - MyLogger - INFO - This is an info message
+2024-08-26 11:18:40,399 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:28:48,785 - MyLogger - INFO - This is an info message
+2024-08-26 11:28:48,786 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:30:04,345 - MyLogger - INFO - This is an info message
+2024-08-26 11:30:04,346 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:30:09,447 - MyLogger - INFO - This is an info message
+2024-08-26 11:30:09,448 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:31:51,135 - MyLogger - INFO - This is an info message
+2024-08-26 11:31:51,136 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:31:59,181 - MyLogger - INFO - This is an info message
+2024-08-26 11:31:59,188 - MyLogger - DEBUG - This is an debug message
+2024-08-26 11:54:36,970 - MyLogger - CRITICAL - Something awful happened..:( HTTPSConnectionPool(host='httpbin,org', port=443): Max retries exceeded with url: /get (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002926175F230>: Failed to resolve 'httpbin,org' ([Errno 11001] getaddrinfo failed)"))
+2024-08-26 11:54:51,189 - MyLogger - INFO - Requesting from: https://httpbin.org/get
+2024-08-26 11:54:51,189 - MyLogger - INFO - Headers {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.32.3', 'X-Amzn-Trace-Id': 'Root=1-66cc1fb4-40036f461cdfaf4831cca4cb'}
