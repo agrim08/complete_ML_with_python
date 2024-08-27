@@ -30,7 +30,7 @@ if __name__ == "__main__":
     start_time = time.time()
     
     #create pool of worker process:
-    '''The Pool class in Python’s multiprocessing module is a powerful tool for parallel processing.
+    '''The Pool class in Python's multiprocessing module is a powerful tool for parallel processing.
     It allows you to manage a pool of worker processes to which you can submit tasks.'''
     with multiprocessing.Pool() as pool:
         result = pool.map(fact_clac,nums)
