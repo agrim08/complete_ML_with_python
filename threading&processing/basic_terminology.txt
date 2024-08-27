@@ -1,0 +1,114 @@
+﻿Here's a detailed explanation of each term:
+
+
+*Program*
+
+
+A program is a set of instructions written in a programming language that a computer executes to perform a specific task. It's a collection of code, data, and resources that are compiled or interpreted to create an executable file. A program can be thought of as a recipe for the computer to follow.
+
+
+*Process*
+
+
+A process is an instance of a program in execution. It's a self-contained unit that consists of:
+
+
+- Code: The program's instructions
+- Data: The program's variables, constants, and data structures
+- Resources: Memory, file handles, sockets, etc.
+- State: The current execution point, registers, and flags
+
+
+Each process runs in its own memory space, and changes made by one process do not affect other processes. Processes are also known as tasks or jobs.
+
+
+*Thread*
+
+
+A thread is a smaller unit of execution within a process. It's a lightweight process that shares the same memory space and resources as the parent process. Threads are also known as lightweight processes.
+
+
+Threads have their own:
+
+
+- Program counter (instruction pointer)
+- Stack
+- Local variables
+- Priority
+
+
+Threads can run concurrently, improving system responsiveness and throughput. They're useful for tasks like:
+
+
+- Handling multiple user requests simultaneously
+- Performing background tasks
+- Improving system utilization
+
+
+*Core*
+
+
+A core is a physical or logical processing unit in a CPU (Central Processing Unit). It's the part of the CPU that executes instructions. Modern CPUs often have multiple cores, allowing for parallel execution of instructions.
+
+
+*Multi-threading*
+
+
+Multi-threading is a programming technique where multiple threads within a process run concurrently, improving system utilization and responsiveness. Threads can run in parallel on multiple cores, or concurrently on a single core through context switching.
+
+
+Multi-threading is useful for tasks like:
+
+
+- Handling multiple user requests simultaneously
+- Performing background tasks
+- Improving system utilization
+
+
+*Single-threading*
+
+
+Single-threading is a programming approach where only one thread is executed at a time. This simplifies synchronization and communication between threads but can lead to performance bottlenecks.
+
+
+*Multi-processing*
+
+
+Multi-processing is a technique where multiple processes run concurrently, each with its own memory space. This approach is useful for tasks that require parallel execution, like:
+
+
+- Scientific simulations
+- Data processing
+- Machine learning
+
+
+*Scheduler*
+
+
+A scheduler is a component of the operating system responsible for allocating CPU time to processes or threads. It manages the execution order and priority of processes and threads, ensuring efficient system utilization.
+
+
+The scheduler's tasks include:
+
+
+- Process creation and termination
+- Context switching between threads
+- Priority management
+- CPU time allocation
+
+
+Scheduling algorithms like Round-Robin, Priority Scheduling, and Multi-Level Feedback Queue (MLFQ) determine how the scheduler allocates CPU time.
+
+
+In summary:
+
+
+- A program is the code.
+- A process is an instance of the program running.
+- A thread is a smaller unit of execution within a process.
+- A core is the physical or logical processing unit.
+- Multi-threading and multi-processing are techniques for concurrent execution.
+- A scheduler manages the allocation of CPU time to processes or threads.
+
+
+These concepts are essential in programming, especially when dealing with concurrency, parallelism, and system resource management.
