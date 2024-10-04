@@ -1,0 +1,11 @@
+What is feature Enginering?
+
+Feature engineering is the process of transforming raw data into features that are suitable for machine learning models. 
+In other words, it is the process of selecting, extracting, and transforming the most relevant features from the available data to build more accurate and efficient machine learning models.
+
+
+Three mechanism of feature engineering:
+
+1. Missing Completely at random (MCAR)
+2. Missing at random (MCR)
+3. Missing data not at random (MNAR)
