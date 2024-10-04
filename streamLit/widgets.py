@@ -21,7 +21,7 @@ st.write(f"Your age is {age}")
 #Selctbox:
 options = ["select","Python","Java","Cpp","JS"]
 choice = st.selectbox("Choose your fav language :" , options)
-if choice == 'select':
+if choikoce == 'select':
     st.write("Choose an option")
 else:
     st.write(f"{choice} is a good choice")

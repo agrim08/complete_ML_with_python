@@ -19,7 +19,7 @@ df = pd.DataFrame({
 st.write("here is the database ")
 st.write(df)
 
-#create a lone chart:
+#create a line chart:
 chart_data = pd.DataFrame(
     np.random.randn(20,3),columns=['a','b','c']
 )

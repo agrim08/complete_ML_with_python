@@ -1,0 +1,66 @@
+### 1. Importing Libraries
+```python
+import streamlit as st
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+```
+- **Streamlit (`st`)**: A library for creating web applications easily.
+- **Pandas (`pd`)**: A library for data manipulation and analysis.
+- **Scikit-learn (`sklearn`)**: A library for machine learning. Here, we use it to load a dataset and create a classifier.
+
+### 2. Loading Data:
+
+@st.cache_data
+def load_data():
+    iris = load_iris()
+    df = pd.DataFrame(iris.data, columns=iris.feature_names)
+    df['species'] = iris.target
+    return df, iris.target_names
+
+df, target_names = load_data()
+```
+- **`@st.cache_data`**: This decorator caches the data loading function to speed up the app.
+- **`load_iris()`**: Loads the Iris dataset, which contains measurements of iris flowers.
+- **`pd.DataFrame(iris.data, columns=iris.feature_names)`**: Converts the dataset into a DataFrame with column names.
+- **`df['species'] = iris.target`**: Adds a column for the species of each flower.
+- **`return df, iris.target_names`**: Returns the DataFrame and the names of the species.
+
+### 3. Training the Model
+```python
+model = RandomForestClassifier()
+model.fit(df.iloc[:, :-1], df['species'])
+```
+- **`RandomForestClassifier()`**: Creates a Random Forest classifier, a type of machine learning model.
+- **`model.fit(df.iloc[:, :-1], df['species'])`**: Trains the model using the features (all columns except the last one) and the species.
+
+### 4. Creating Input Sliders
+```python
+st.sidebar.title("Input Features")
+sepal_length = st.sidebar.slider("Sepal length", float(df['sepal length (cm)'].min()), float(df['sepal length (cm)'].max()))
+sepal_width = st.sidebar.slider("Sepal width", float(df['sepal width (cm)'].min()), float(df['sepal width (cm)'].max()))
+petal_length = st.sidebar.slider("Petal length", float(df['petal length (cm)'].min()), float(df['petal length (cm)'].max()))
+petal_width = st.sidebar.slider("Petal width", float(df['petal width (cm)'].min()), float(df['petal width (cm)'].max()))
+```
+- **`st.sidebar.title("Input Features")`**: Adds a title to the sidebar.
+- **`st.sidebar.slider(...)`**: Creates sliders for the user to input the features of the iris flower (sepal length, sepal width, petal length, petal width).
+
+### 5. Making Predictions
+```python
+input_data = [[sepal_length, sepal_width, petal_length, petal_width]]
+
+# Prediction:
+prediction = model.predict(input_data)
+predicted_specie = target_names[prediction[0]]
+
+st.write("Prediction")
+st.write(f"Predicted specie is : {predicted_specie}")
+```
+- **`input_data = [[sepal_length, sepal_width, petal_length, petal_width]]`**: Collects the input data from the sliders into a list.
+- **`model.predict(input_data)`**: Uses the trained model to predict the species based on the input data.
+- **`target_names[prediction[0]]`**: Maps the predicted species index to its name.
+- **`st.write("Prediction")`**: Displays the prediction title.
+- **`st.write(f"Predicted specie is : {predicted_specie}")`**: Displays the predicted species.
+
+### Summary
+This code creates a web application where users can input the features of an iris flower using sliders. The app then uses a trained Random Forest classifier to predict the species of the flower and displays the result.
