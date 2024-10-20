@@ -1,3 +1,5 @@
+# COMMAND TO RUN: python -m streamlit run webApp.py
+
 import streamlit as st
 import numpy as np
 import pandas as pd
